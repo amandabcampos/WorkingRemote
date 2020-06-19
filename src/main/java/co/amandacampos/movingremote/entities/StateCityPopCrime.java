@@ -1,4 +1,4 @@
-package co.amandacampos.movingremote;
+package co.amandacampos.movingremote.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,17 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class StateCountyCityDenTimezone {
+public class StateCityPopCrime {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private String state;
-	private String county;
 	private String city;
-	private Double density;
-	private String timezone;
+	private Double population;
+	private String crime;
 	
 	public Long getId() {
 		return id;
@@ -24,17 +23,12 @@ public class StateCountyCityDenTimezone {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public String getState() {
 		return state;
 	}
 	public void setState(String state) {
 		this.state = state;
-	}
-	public String getCounty() {
-		return county;
-	}
-	public void setCounty(String county) {
-		this.county = county;
 	}
 	public String getCity() {
 		return city;
@@ -42,17 +36,19 @@ public class StateCountyCityDenTimezone {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public Double getDensity() {
-		return density;
+	public Double getPopulation() {
+		return population;
 	}
-	public void setDensity(Double density) {
-		this.density = density;
+	public void setPopulation(Double population) {
+		this.population = population;
 	}
-	public String getTimezone() {
-		return timezone;
+	public String getCrime() {
+		return crime;
 	}
-	public void setTimezone(String timezone) {
-		this.timezone = timezone;
+	public void setCrime(String crime) {
+		this.crime = crime;
 	}
+	
+	
 
 }

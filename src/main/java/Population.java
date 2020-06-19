@@ -5,10 +5,18 @@ public class Population {
 
 	public static void main(String[] args) {
 		List<Integer> population = getPopulation();
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
 		
 		for (Integer pop : population) {
-			System.out.println(pop);
+			if (pop<min) {
+				min = pop;
+			}
+			if (pop>max) {
+				max = pop;
+			}
 		}
+		System.out.println("min: " + min + "max: " + max);
 		
 //		List<String> rating = new ArrayList<>();
 //		for (Integer pop : population) {

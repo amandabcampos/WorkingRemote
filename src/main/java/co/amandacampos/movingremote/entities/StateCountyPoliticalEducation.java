@@ -1,4 +1,4 @@
-package co.amandacampos.movingremote;
+package co.amandacampos.movingremote.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
