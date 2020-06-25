@@ -1,0 +1,28 @@
+ .container {
+  max-width: 600px;
+  margin: auto;
+  /* border: 1px solid #f5da41; */
+  border-style: outset;
+  padding: 10px;
+}
+
+.row{
+	width: 1800px;
+}
+
+legend{
+	font-weight: bold;
+	font-family: Charcoal;
+}
+
+label, button{
+	font-family: Charcoal;
+}
+
+span{
+	font-size:10pt;
+	font-weight: normal;
+}
+
+
+

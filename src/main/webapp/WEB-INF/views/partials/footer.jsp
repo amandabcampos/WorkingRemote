@@ -14,27 +14,17 @@
 </head>
 <body>
 
-	<%@ include file="partials/header.jsp"%>
 
-	<table class="table">
-		<thead>
-			<tr>
-				<th scope="col">State</th>
-				<th scope="col">City</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach var="obj" items="${selected}">
-				<tr>
-					<th scope="row">${obj.state}</th>
-					<td>${obj.city}</td>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
+	<footer class="navbar-light bg-light"
+		style="margin: auto; position: absolute; bottom: 0; width: 100%;">
+		<p>© 2020 Copyright</p>
+		<p style="line-height: 0.2;">Application by:</p>
+		<p style="margin-bottom: 0;">
+			<a href="https://github.com/amandabcampos" target="_blank">Amanda
+				Campos</a>
+		</p>
+	</footer>
 
-
-	<%-- <%@ include file="partials/footer.jsp"%> --%>
 
 
 </body>

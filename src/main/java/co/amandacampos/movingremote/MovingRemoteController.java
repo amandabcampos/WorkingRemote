@@ -31,13 +31,17 @@ public class MovingRemoteController {
 
 	@RequestMapping("/")
 	public ModelAndView home() {
-
 		return new ModelAndView("home");
-
 	}
+	
+	@RequestMapping("/search")
+	public ModelAndView search() {
+		return new ModelAndView("search");
+	}
+	
 
-	@PostMapping("/")
-	public ModelAndView home(@RequestParam(name = "popmin", required = false) Double popmin,
+	@PostMapping("/search")
+	public ModelAndView search(@RequestParam(name = "popmin", required = false) Double popmin,
 			@RequestParam(name = "popmax", required = false) Double popmax,
 			@RequestParam(name = "political", required = false) List<String> political,
 			@RequestParam(name = "education", required = false) List<String> education,
