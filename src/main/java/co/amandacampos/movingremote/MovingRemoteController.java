@@ -52,7 +52,7 @@ public class MovingRemoteController {
 		// TODO: Add current time next to the timezones
 		// TODO: Clean StateCountyCityDenTimezone to get rid of duplicates and decrease computation time
 
-//		PART 1: Finding a County after selecting from Political and Education
+//		PART 1: Finding a County after selecting from both Political and Education
 		
 		List<StateCountyPoliticalEducation> subPol = new ArrayList<>();
 
